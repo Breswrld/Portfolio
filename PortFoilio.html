@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="Portfoilio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<audio id="bg-music" loop muted>
+       <source src="your-background-audio.mp3" type="audio/mpeg">
+ </audio>
+   <div class="hero-nav">
+          <nav class="desk-nav">
+            <ul>
+             <li><a href="homepage.html">Home</a></li>
+            <li><a href="portfoilio.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+              <li><a href="Credentials.html">Credentials</a></li>
+                <li>
+                    <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<nav class="mobile-nav">
+    <div id="mobile-links" style="display: none;">
+        <a href="homepage.html">Home</a>
+        <a href="portfoilio.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a id="music-toggle-mobile" onclick="toggleMusic()" title="Toggle Music">
+            <i id="music-icon-mobile" class="fa-solid fa-volume-xmark"></i>
+        </a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+ </div>
+    <main>
+        <section id="design-concepts">
+            <h2>My Projects</h2>
+            <div class="article-card">
+                <img src="design1.jpg" alt="Design 1 Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Web Page Project</h2>
+                    <p class="card-excerpt">Previous Project: Vlog</p>
+                    <a href="https://breswrld.github.io/dreamer.com/" class="read-more">View Vlog</a>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="design2.jpg" alt="Design 2 Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Bag Design</h2>
+                    <p class="card-excerpt">Bags that was created by bre</p>
+                    <a href="" class="read-more">View Bags</a>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <img src="design3.jpeg" alt="Design 3 Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Art Designs</h2>
+                    <p class="card-excerpt">Art pieces created by bre</p>
+                    <a href="Art design.html" class="read-more"> View Illustration</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>

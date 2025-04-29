@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+ <audio id="bg-music" loop muted>
+       <source src="your-background-audio.mp3" type="audio/mpeg">
+ </audio>
+    <div class="hero-nav">
+        <nav class="desk-nav">
+        <ul>        
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="portfoilio.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Credentials.html">Credentials</a></li>
+			<li>
+                <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+                   <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+                   <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+			<li id="music-toggle" onclick="toggleMusic()" title="Toggle Music">
+            <i id="music-icon" class="fa-solid fa-volume-xmark"></i>
+            </li>
+        </ul>
+    </nav>
+	
+	   <nav class="mobile-nav">
+    <div id="mobile-links" style="display: none;">
+        <a href="homepage.html">Home</a>
+        <a href="portfoilio.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a id="music-toggle-mobile" onclick="toggleMusic()" title="Toggle Music">
+            <i id="music-icon-mobile" class="fa-solid fa-volume-xmark"></i>
+        </a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+	
+	<header>
+        <h1>Bre: Designer & Creator</h1>
+        </header>
+    </div>
+    <main id="portfolio-timeline">
+  <section id="intro-timeline">
+    <h2>Exploring the intersection of web development and fashion design.</h2>
+    <p>Welcome to my online portfolio! I'm Bre, a designer with a passion for creating unique and innovative designs.</p>
+  </section>
+
+  <section id="projects-timeline">
+    <div class="timeline">
+      <article class="timeline-item" data-year="College">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <h3>Vlog Website Redesign</h3>
+          <p>A redesign of my previous vlog website, focusing on a more modern and user-friendly interface.</p>
+          <a href="portfoilio.html#vlog-website"><i class="fa-solid fa-video"></i></a>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-year="Ongoing">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <h3>Hand-crafted Tote Bags</h3>
+          <p>A custom-designed leather tote bag, featuring hand-stitched details and unique hardware.</p>
+          <a href="portfoilio.html#leather-tote"> <i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-year="Ongoing">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <h3>Digital Art Series</h3>
+          <p>A series of digital illustrations inspired by nature and abstract concepts.</p>
+          <a href="portfoilio.html#illustration-series"> <i class="fa-solid fa-compass-drafting"></i></a>
+        </div>
+      </article>
+
+      </div>
+  </section>
+</main>
+
+    <footer>
+         <br>
+	   <h1> Contact us  </h1>
+	   <br>
+    <div class="contact-info">
+        <div class="contact-item">
+		
+            <a href="mailto:brehanna.sutherland@ctstate.edu">
+			<i class="fa-solid fa-envelope"></i></a>
+            <p>brehanna.sutherland@ctstate.edu</p>
+        </div>
+        <div class="contact-item">
+           <i class="fa-solid fa-phone"></i>
+            <p>(203) 908-6370</p>
+        </div>
+    </div>
+    <p class="copyright">&copy; Copyright 2024. All Rights Reserved.</p>
+	<br>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>

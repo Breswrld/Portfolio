@@ -1,0 +1,579 @@
+/* ==========================================================================
+    Fonts & Base Styles
+    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap&family=Cinzel:wght@400;700&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', serif; /* Default font */
+	
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif; /* Heading font */
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+/* ==========================================================================
+    Hero Section
+    ========================================================================== */
+
+.hero-nav {
+    position: relative;
+    height: 80vh;
+    background-image: url('bre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.hero-nav header { /* Header within Hero */
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: White;
+    position: relative;
+}
+
+/* ==========================================================================
+    Navigation
+    ========================================================================== */
+
+nav {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #63372C;
+    font-family: 'Cinzel', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 25px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+nav a i {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s ease;
+    margin-right: 0;
+}
+
+nav a:hover i {
+    color: #e0b0ff;
+}
+/* ==========================================================================
+    General Sections & Elements
+    ========================================================================== */
+
+section {
+    margin: 20px;
+    text-align: left;
+	color: #63372C;
+}
+header {
+ margin-top: 80px;
+    font-size: 1.5em;
+    text-align: center;
+}
+section p {
+	font-family: 'Poppins', serif;
+} 
+#music-toggle i {
+  color:#C97D60; /* Hot pink for example */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+/* ==========================================================================
+    Education & Certifications Section and Table Styles
+    ========================================================================= */
+#education-certifications {
+    padding: 30px;
+}
+
+#education-certifications h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#education-certifications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#education-certifications th,
+#education-certifications td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#education-certifications th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+}
+
+#education-certifications tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#education-certifications tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* ========================================================================== 
+    Mobile Navigation (Hamburger)
+   ========================================================================== */
+
+/* Hide the nav links initially on mobile */
+#mobile-links {
+    display: none;
+    text-align: center;
+    
+}
+
+/* Style the mobile nav links */
+#mobile-links a {
+    display: none;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Icon */
+.nav-icon {
+	display: none;
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+/* ==========================================================================
+    Section Timeline
+    ========================================================================== */
+
+#portfolio-timeline {
+  padding: 2rem;
+  font-family: 'Cinzel', serif; /* Choose a readable font */
+}
+
+#intro-timeline {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+}
+
+.timeline {
+  position: relative;
+  padding-left: 10px; /* Space for the line and circle on smaller screens */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: #ccc; /* The vertical line */
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 5px; /* Adjust vertical alignment */
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  background-color: #C97D60; /* Circle color */
+  border: 2px solid #C97D60; /* Optional: Add a border */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 30px; /* Indent content */
+  background-color: #f9f9f9; /* Light background for content */
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeline-content p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.timeline-content a i {
+  font-size: 1.5em;
+  color: #C97D60;
+  margin-right: 5px;
+}
+
+/* ==========================================================================
+    Footer
+    ========================================================================== */
+
+footer {
+    text-align: center;
+    background-color:#63372C;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+footer i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #C97D60;
+}
+
+.copyright {
+    margin-top: 40px;
+}
+
+.footer h1 {
+    font-size: 2em;
+    text-align: center;
+}
+.task-desk 
+{
+	display: none;
+}
+
+/* ==========================================================================
+    Responsive Design - Tablet & Desktop
+    ========================================================================== */
+
+/* Tablet Styles (min-width: 769px) */
+@media (min-width: 769px) and (max-width: 1024px)  {
+    nav ul {
+        justify-content: center; 
+    }
+.desk-nav {
+	display: none;
+}
+    nav li {
+        margin-right: 30px;
+    }
+
+    section {
+        margin: 30px;
+      font-size: 1em;		
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+	.hero-nav {
+    height: 90vh;
+        }
+    header {
+        margin-top: 150px; 
+  }
+  .timeline-item:nth-child(odd)::before {
+    right: calc(50% + 40px);
+  }
+
+  .timeline-item:nth-child(even)::before {
+    left: calc(50% + 40px);
+   }
+  #mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+  #mobile-links a {
+    display: block;
+}
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+    nav ul {
+   
+        padding-left: 50px;
+    }
+	.mobile-nav {
+		display:none;
+	}
+
+  section {
+    margin: 30px;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+    nav li {
+        margin-right: 40px; /* More spacing between nav items */
+    }
+    .contact-info {
+        justify-content: space-around; 
+    }
+	  #education-certifications table {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	
+}
+
+/* Mobile Styles (max-width: 768px) - Your existing mobile styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+.desk-nav {
+	display: none;
+}
+    nav li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+	 .hero-nav {
+        height: 80vh;
+    }
+   .timeline-item::before {
+    left: 45px; 
+  }
+     #education-certifications table {
+        display: block;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+
+    #education-certifications thead {
+        display: none;
+    }
+
+    #education-certifications tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    #education-certifications td {
+        display: flex;
+        text-align: left;
+        border-bottom: none;
+        padding: 5px 0;
+    }
+
+    #education-certifications td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: -60px;
+        min-width: 120px;
+        color: #555;
+    }
+
+    #education-certifications td:last-child {
+        padding-bottom: 0;
+    }
+	 #mobile-links {
+    display: flex;
+    flex-direction: column;
+    }
+     #mobile-links a {
+    display: block;
+     }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .project a i {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin: 10px 0;
+    }
+
+    footer i {
+        font-size: 20px;
+    }
+	.hero-nav {
+   
+    height: 80vh;
+}
+  header {
+  margin-top: 80px; 
+   font-size: 1em;
+}
+  #education-certifications td:before {
+        min-width: 100px;
+    }
+	#mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+  #mobile-links a {
+    display: block;
+}
+}
+}
+
+@media (min-width: 481px)and (max-width: 767px){
+
+ header {
+  margin-top: 50px; 
+   font-size: 1em;
+}
+
+
+}

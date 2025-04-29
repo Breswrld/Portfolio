@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Art design</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<audio id="bg-music" loop muted>
+       <source src="your-background-audio.mp3" type="audio/mpeg">
+ </audio>
+    <div class="hero-nav">
+        <nav class="desk-nav">
+        <ul>        
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="portfoilio.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Credentials.html">Credentials</a></li>
+			<li>
+                <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+                   <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+                   <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+			<li id="music-toggle" onclick="toggleMusic()" title="Toggle Music">
+            <i id="music-icon" class="fa-solid fa-volume-xmark"></i>
+            </li>
+        </ul>
+    </nav>
+	
+	   <nav class="mobile-nav">
+    <div id="mobile-links" style="display: none;">
+        <a href="homepage.html">Home</a>
+        <a href="portfoilio.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="https://www.instagram.com/b.r.e.the_greatest/?utm_source=ig_embed" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://profile.indeed.com/p/brehannas-nqhn56w" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a id="music-toggle-mobile" onclick="toggleMusic()" title="Toggle Music">
+            <i id="music-icon-mobile" class="fa-solid fa-volume-xmark"></i>
+        </a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+	
+	<header>
+        <h1>Bre: Designer & Creator</h1>
+        </header>
+    </div>
+	
+	<main>
+  <div class="collage-container">
+        <div class="image-gallery">
+            <img src="gallery/pic1.jpg" alt="Picture 1">
+            <img src="gallery/pic2.jpg" alt="Picture 2">
+            <img src="gallery/pic3.jpg" alt="Picture 3">
+            <img src="gallery/pic4.jpg" alt="Picture 4">
+            <img src="gallery/pic5.jpg" alt="Picture 5">
+            <img src="gallery/pic6.jpg" alt="Picture 6">
+            <img src="gallery/pic7.jpg" alt="Picture 7">
+            <img src="gallery/pic8.jpg" alt="Picture 8">
+        </div>
+        <div class="description">
+  <h2>Project Description</h2>
+  <p>This section provides a detailed description of the project, highlighting the key features and artistic vision behind the pictures.</p>
+
+  <h2>Image 1: The Flower Pot</h2>
+  <p>This artwork showcases a vibrant flower pot rendered in a rich palette derived from a mixture of yellow, blue, red, and white pigments. A key focus of this piece was the exploration of shadow, evident in the deliberate application of black along the side of the second pot, adding a sense of depth and dimension to the composition.</p>
+
+  <h2>Image 2: The Pineapple</h2>
+  <p>This sketch of a pineapple possesses a unique quality, born from the sensory experience of enjoying the fruit while simultaneously capturing its form on paper. It's a drawing directly influenced by the act of observation and taste.</p>
+
+  <h2>Image 3: The Eye Spy Art</h2>
+  <p>Created from the very same colorful droplets of paint that formed "The Flower Pot," this intriguing piece was brought into existence through a process of folding. The resulting abstract patterns hold hidden figures, inviting the viewer to discover the many animals concealed within. The artist has identified a goat and a bird amongst the forms.</p>
+
+  <h2>Image 4: The Rose and Butterfly</h2>
+  <p>This "pop out" sketch of a rose accompanied by a butterfly was brought to life using thick paper and markers. The technique suggests a dimensional quality, where elements of the drawing might lift or stand out from the surface, creating a tactile and visually engaging effect.</p>
+
+  <h2>Image 5: WHAT IF HOME IS A SHOE</h2>
+  <p>This painting is described as an "inner child painting," evoking a sense of nostalgia and the boundless curiosity of youth. It specifically recalls a time when the artist frequently posed "What If" questions to their parents, suggesting a whimsical and imaginative concept exploring unconventional ideas of home.</p>
+
+  <h2>Image 6: The Shadowy Landscape</h2>
+  <p>This drawing, executed purely with pencil, emphasizes the level of detail achievable through this medium. The scene depicts a tranquil riverside setting, where a waterfall dramatically cascades between two imposing cliffs, highlighting the interplay of light and shadow within the natural landscape.</p>
+
+  <h2>Image 7: Koi Fish Sketch</h2>
+  <p>The image is described as a detailed sketch featuring one or more koi fish. The text suggests that the drawing's style indicates it could serve as a preliminary study for a larger work, such as a painting or a tattoo design, or simply be an artistic exploration of the subject.</p>
+    
+   <h2>Image 8: Humming Bird</h2>
+   <p>This drawing features the Hummingbird, the National Bird of Jamaica. The artist created this piece as a heartfelt expression of longing for home.</p>
+		</div>
+    </div>
+	
+   <section id="phone-gallery">
+    <div class="intro-section">       
+  <h2>Project Description</h2>
+  <p>This section provides a detailed description of the project, highlighting the key features and artistic vision behind the pictures.</p>
+       </div>
+  <div class="photo-item">
+    <img src="gallery/pic1.jpg" alt="Image with dimensions 2296 x 2750">
+    <div class="description-container">
+      <h2>Image 1: The Flower Pot</h2>
+      <p>This artwork showcases a vibrant flower pot rendered in a rich palette derived from a mixture of yellow, blue, red, and white pigments. A key focus of this piece was the exploration of shadow, evident in the deliberate application of black along the side of the second pot, adding a sense of depth and dimension to the composition.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic2.jpg" alt="Image with dimensions 2296 x 3109">
+    <div class="description-container">
+      <h2>Image 2: The pineapple</h2>
+      <p>This sketch of a pineapple possesses a unique quality, born from the sensory experience of enjoying the fruit while simultaneously capturing its form on paper. It's a drawing directly influenced by the act of observation and taste.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic3.jpg" alt="Image with dimensions 1440 x 1173">
+    <div class="description-container">
+      <h2>Image 3: The Eye spy Art</h2>
+      <p>Created from the very same colorful droplets of paint that formed "The Flower Pot," this intriguing piece was brought into existence through a process of folding. The resulting abstract patterns hold hidden figures, inviting the viewer to discover the many animals concealed within. The artist has identified a goat and a bird amongst the forms.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic4.jpg" alt="Image with dimensions 2296 x 4080">
+    <div class="description-container">
+      <h2>Image 4: The Rose and Butterfly</h2>
+      <p>This "pop out" sketch of a rose accompanied by a butterfly was brought to life using thick paper and markers. The technique suggests a dimensional quality, where elements of the drawing might lift or stand out from the surface, creating a tactile and visually engaging effect.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic5.jpg" alt="Image with dimensions 1177 x 1573">
+    <div class="description-container">
+      <h2>Image 5: WHAT IF HOME IS A SHOE</h2>
+      <p>This painting is described as an "inner child painting," evoking a sense of nostalgia and the boundless curiosity of youth. It specifically recalls a time when the artist frequently posed "What If" questions to their parents, suggesting a whimsical and imaginative concept exploring unconventional ideas of home.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic6.jpg" alt="Image with dimensions 2185 x 1446">
+    <div class="description-container">
+      <h2>Image 6: The shadowy landscape</h2>
+      <p>This drawing, executed purely with pencil, emphasizes the level of detail achievable through this medium. The scene depicts a tranquil riverside setting, where a waterfall dramatically cascades between two imposing cliffs, highlighting the interplay of light and shadow within the natural landscape.</p>
+    </div>
+  </div>
+
+  <div class="photo-item">
+    <img src="gallery/pic7.jpg" alt="Image with dimensions 2296 x 3252">
+    <div class="description-container">
+      <h2>Image 7: Koi Fish Sketch</h2>
+      <p>The image is described as a detailed sketch featuring one or more koi fish. The text suggests that the drawing's style indicates it could serve as a preliminary study for a larger work, such as a painting or a tattoo design, or simply be an artistic exploration of the subject.</p>
+    </div>
+  </div>
+
+<div class="photo-item">
+    <img src="gallery/pic8.jpg" alt="Image with dimensions (assuming similar size)">
+    <div class="description-container">
+      <h2>Image 8: Humming Bird</h2>
+      <p>This drawing features the Hummingbird, the National Bird of Jamaica. The artist created this piece as a heartfelt expression of longing for home.</p>
+	</div>
+  </div>
+  <br>
+    </section>
+	</main>
+<script src="script.js"></script>
+</body>
+</html>
+	
+

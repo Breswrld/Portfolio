@@ -1,0 +1,548 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap&family=Cinzel:wght@400;700&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Base Font Settings */
+body {
+    font-family: 'Poppins', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+/* ========================================================================== 
+    Mobile Navigation (Hamburger)
+   ========================================================================== */
+
+/* Hide the nav links initially on mobile */
+#mobile-links {
+    display: none;
+    text-align: center;
+    
+}
+
+/* Style the mobile nav links */
+#mobile-links a {
+    display: none;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Icon */
+.nav-icon {
+	display: none;
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-nav {
+    position: relative;
+    height: 80vh;
+    background-image: url('bre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-nav header {
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+nav {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #63372C;
+    font-family: 'Cinzel', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 25px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a i {
+    font-size: 1.5em;
+    color: white;
+    margin-right: 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover i {
+    color: #e0b0ff;
+}
+
+/* ==========================================================================
+   Main Content Sections
+   ========================================================================== */
+
+header {
+    margin-top: 80px;
+    font-size: 1.3em;
+}
+
+.collage-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    width: 30%;
+    overflow-y: auto;
+}
+
+.image-gallery img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 15% auto;
+}
+
+.description {
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.6;
+	overflow-x: scroll;
+}
+
+.description h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#phone-gallery {
+    display: none;
+}
+
+
+.image-gallery img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, z-index 0s 0.3s;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .zoomed-in-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+    }
+
+    .zoomed-in-image {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        cursor: zoom-out;
+        position: relative;
+    }
+
+    .exit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2em;
+        z-index: 102;
+    }
+
+    body.zoomed-in-active {
+        overflow: hidden;
+    }
+
+
+/* ==========================================================================
+   Responsive Design - Tablet (769px - 1024px)
+   ========================================================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav ul {
+        justify-content: center;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .desk-nav {
+        display: none;
+    }
+    nav li {
+        margin-right: 30px;
+    }
+
+    section {
+        margin: 30px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+
+    .hero-nav {
+        height: 60vh;
+    }
+
+    header {
+        margin-top: 150px;
+    }
+	.collage-container{
+		 display: flex;
+    flex-direction: row;
+	}
+	.phone-gallery{
+		display: none;
+	}
+	.description {
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.6;
+	overflow-x: scroll;
+}
+
+  .description h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+#mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-links a {
+    display: block;
+}
+  .zoomed-in-image {
+        max-width: 60%;
+        max-height: 60%;
+}
+   
+}
+
+/* ==========================================================================
+   Responsive Design - Desktop (1025px and above)
+   ========================================================================== */
+
+@media (min-width: 1025px) {
+    nav ul {
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .contact-info {
+        justify-content: space-around;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .desk-nav {
+        display: block;
+    }
+    #phone-gallery {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   Responsive Design - Mobile (up to 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+    .desk-nav {
+        display: none;
+    }
+    nav li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .hero-nav {
+        height: 60vh;
+    }
+
+    header {
+        margin-top: 90px;
+        font-size: 1em;
+    }
+
+    #phone-gallery {
+        display: block;
+    }
+
+    .collage-container {
+        display: none;
+    }
+
+    .intro-section {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .intro-section h1 {
+        color: #333;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .intro-section p {
+        color: #555;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .photo-item {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .photo-item img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .description-container {
+        padding: 10px;
+    }
+
+    .description-container h2 {
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .description-container p {
+        font-size: 1em;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+	#mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+    #mobile-links a {
+    display: block;
+}
+
+}
+
+/* ==========================================================================
+   Responsive Design - Mid-Size Mobile (481px - 767px)
+   ========================================================================== */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .nav-icon {
+        display: block;
+        text-align: right;
+        margin-right: 20px;
+    }
+     
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #63372C;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+    }
+    .desk-nav {
+        display: none;
+    }
+    #nav-links.show {
+        display: flex;
+    }
+    header {
+        margin-top: 80px;
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    .description {
+        width: 50%;
+        padding: 30px;
+        font-size: 1em;
+        line-height: 1;
+    }
+
+    .description h2 {
+        margin-bottom: 20px;
+        font-size: 1.9em;
+    }
+
+    .image-gallery img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, z-index 0s 0.3s;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .zoomed-in-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+    }
+
+    .zoomed-in-image {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        cursor: zoom-out;
+        position: relative;
+    }
+
+    .exit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2em;
+        z-index: 102;
+    }
+	 .hero-nav {
+        height: 80vh;
+    }
+
+    body.zoomed-in-active {
+        overflow: hidden;
+    }
+    .collage-container {
+        display: none;
+    }
+	#mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+   #mobile-links a {
+    display: block;
+}
+}
