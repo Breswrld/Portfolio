@@ -359,8 +359,9 @@ footer i {
     height: 60vh;
         }
     header {
-        margin-top: 150px; 
-  }
+	font-size: 1.5em;
+    margin-top: 100px;
+}
   .timeline-item:nth-child(odd)::before {
     right: calc(50% + 40px);
   }
