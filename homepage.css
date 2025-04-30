@@ -547,7 +547,6 @@ footer i {
         font-size: 20px;
     }
 	.hero-nav {
-   
     height: 60vh;
 }
   header {
@@ -566,13 +565,12 @@ footer i {
     display: block;
 }
 }
-}
 
 @media (min-width: 481px)and (max-width: 767px){
 
  header {
   margin-top: 50px; 
-   font-size: 1em;
+   font-size: 12px;
 }
 
 
