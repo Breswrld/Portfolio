@@ -15,7 +15,7 @@ body, header, nav, main, footer, img, h1, h3, ul, section, form, div, label, inp
 
 body {
     font-family: 'Poppins', serif; 
-   
+    color:#63372C;
     line-height: 1.6; 
     background-color: #f4f4f4; 
 }
