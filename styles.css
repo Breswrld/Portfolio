@@ -171,6 +171,7 @@ nav a:hover i {
     position: relative;
     border-width: 5px; /* Make sure this has a value greater than 0 */
     border-style: solid;
+    color:#63372C;
 }
 
 .center-container {
@@ -192,6 +193,7 @@ section {
     text-align: left;
     max-width: 960px; /* Limit section width for better readability */
     padding: 20px;
+ color:#63372C;
     background-color: #fff; /* White background for sections */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
