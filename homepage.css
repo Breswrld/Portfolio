@@ -339,9 +339,6 @@ footer i {
 @media (min-width: 769px) and (max-width: 1024px)  {
     .image-pair img {
         width: 48%;
-        display: inline-block;
-        margin: 1%;
-        vertical-align: top;
       }
     nav ul {
         justify-content: center; 
@@ -452,7 +449,7 @@ footer i {
         display: block;
     }
     .image-pair img {
-        width: 100%;
+        width: 60%;
         display: block;
         margin-bottom: 10px;
       }
@@ -546,7 +543,7 @@ footer i {
         font-size: 2em;
     }
     .image-pair img {
-        width: 100%;
+        width: 60%;
         margin-bottom: 10px;
       }
     
