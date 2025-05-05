@@ -270,11 +270,21 @@ section p {
   color: #C97D60;
   margin-right: 5px;
 }
+.image-pair {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
 .image-pair img {
-    width: 48%;
-    margin: 1%;
-    display: inline-block;
-  }
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 /* ==========================================================================
     Footer
     ========================================================================== */
