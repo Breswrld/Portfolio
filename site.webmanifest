@@ -1,5 +1,5 @@
 {
-  "name": "BRE",
+  "name": "Profolio",
   "short_name": "BRE",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#e1705c",
-  "background_color": "#faece0",
+  "theme_color": "#ffffff",
+  "background_color": "#f4b7eb",
   "display": "standalone"
 }
